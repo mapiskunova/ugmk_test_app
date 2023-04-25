@@ -1,8 +1,0 @@
-version: "3.8"
-
-services:
-  app:
-    container_name: ugmk_test_app
-    image: ugmk_test_app
-    build:
-      context: .
