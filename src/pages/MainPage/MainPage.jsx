@@ -102,9 +102,9 @@ function MainPage() {
         <div className="main_container__border flex-end">
           <span className="label">Фильтр по типу продукции</span>
           <select
-           defaultValue={productType}
-           onChange={onChangeProductType}
-           name="products"
+            defaultValue={productType}
+            onChange={onChangeProductType}
+            name="products"
           >
             {filterOptions.map((option) => (
               <option key={option.value} value={option.value}>{option.label}</option>
@@ -112,15 +112,15 @@ function MainPage() {
           </select>
         </div>
         <div className='main_container__border chart'>
-        {chartData && (
-          <Bar
-          ref={chartRef}
-          data={chartData}
-          onClick={onClick}
-          options={options}
-          />
+          {chartData && (
+            <Bar
+              ref={chartRef}
+              data={chartData}
+              onClick={onClick}
+              options={options}
+            />
           )}
-          </div>
+        </div>
       </div>
     </div>
   )
